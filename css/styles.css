@@ -35,12 +35,19 @@
 
 .lead-in .intro {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 .lead-in .latest-videos {
     float: right;
-    width: 50%;
+    width: 60%;
+}
+
+/* Clear floats after the columns */
+.lead-in:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .lead-in .intro h3 {
@@ -51,7 +58,7 @@
 
 /*Slider demo*/
 .carousel-wrap {
-    width: 80%;
+    width: 90%;
     position: relative;
 }
 
@@ -75,11 +82,11 @@
 }
 
 .owl-nav .owl-prev {
-    left: -30px;
+    left: -15px;
 }
 
 .owl-nav .owl-next {
-    right: -30px;
+    right: -15px;
 }
 
 
@@ -107,8 +114,98 @@
     right: 7px;
 }
 
-/* removing blue outline from buttons */
-button:focus, button:active {
-    outline: none;
+
+
+/*End slider*/
+
+/*Lead-in section*/
+
+.lead-in {
+    margin-top: 20px;
+    padding: 30px;
 }
 
+.lead-in .intro {
+    padding: 20px;
+    max-width: 37%;
+    background-color: #F4F3F8;
+}
+
+.lead-in .intro p {
+    max-width: 60%;
+    margin-top: 20px;
+}
+
+.lead-in .latest-videos {
+    max-width: 58%;
+}
+
+.lead-in .latest-videos span {
+    font-family: myriad-pro;
+}
+
+.lead-in .latest-videos hr {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.lead-in .latest-videos .slider-container {
+    margin-top: 20px;
+}
+
+
+/*Courses section*/
+
+.courses {
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.all-topics-container {
+
+}
+
+.topic {
+    float: left;
+    width: 30%;
+}
+
+/* Clear floats after the columns */
+.courses:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.courses .topic .topic-head .topic-title {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.courses .topic .topic-head img {
+    max-width: 800%;
+}
+
+.courses .topic .course-list .course img {
+    max-width: 80%;
+}
+
+.courses .topic .course-list .course .course-image-container {
+    float: left;
+    width: 30%;
+}
+
+.courses .topic .course-list .course .course-title-container {
+    float: right;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+.courses .topic .course-list .course:after {
+    content: "";
+    display: table;
+    clear: both;
+}
