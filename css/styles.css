@@ -1,0 +1,114 @@
+@font-face {
+    font-family: oneday;
+    src: url(../fonts/ONEDAY.otf);
+}
+
+@font-face {
+    font-family: myriad-pro;
+    src: url(../fonts/MYRIADPRO-REGULAR.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myriad-pro;
+}
+
+
+
+.header {
+    padding: 20px;
+    background-color: #F2F2F3;
+}
+
+.header .nav-bar {
+    text-align: center;
+}
+
+.header ul li {
+    display: inline;
+}
+
+.header h3 {
+    font-family: oneday;
+}
+
+.lead-in .intro {
+    float: left;
+    width: 50%;
+}
+
+.lead-in .latest-videos {
+    float: right;
+    width: 50%;
+}
+
+.lead-in .intro h3 {
+    font-family: oneday;
+}
+
+
+
+/*Slider demo*/
+.carousel-wrap {
+    width: 80%;
+    position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+
+.owl-nav i {
+    font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
+
+
+/* owl nav */
+.owl-prev span, .owl-next span {
+    color: #FFF;
+}
+
+.owl-prev span:hover,
+.owl-next span:hover {
+    color: #8199A3;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.owl-prev {
+    left: 7px;
+}
+
+.owl-next {
+    right: 7px;
+}
+
+/* removing blue outline from buttons */
+button:focus, button:active {
+    outline: none;
+}
+
