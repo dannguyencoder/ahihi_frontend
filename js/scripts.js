@@ -19,3 +19,15 @@ overlay.addEventListener('click', function () {
         navMobile.classList.add('hidden');
     }, 1000);
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+        dist: 0,
+        padding: 100,
+        fullWidth: true,
+    });
+});
+
